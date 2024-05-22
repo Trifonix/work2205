@@ -26,7 +26,7 @@ exports.getTodoById = (req, res) => {
     if (todo) {
         res.status(200).json(todo);
     } else {
-        res.status(404).json({ message: 'Todo not found' });
+        res.status(404).json({ message: 'Задача не найдена' });
     }
 };
 
@@ -41,7 +41,7 @@ exports.updateTodo = (req, res) => {
         todo.completed = completed !== undefined ? completed : todo.completed;
         res.status(200).json(todo);
     } else {
-        res.status(404).json({ message: 'Todo not found' });
+        res.status(404).json({ message: 'Задача не найдена' });
     }
 };
 
@@ -53,6 +53,6 @@ exports.deleteTodo = (req, res) => {
         todos.splice(index, 1);
         res.status(204).send();
     } else {
-        res.status(404).json({ message: 'Todo not found' });
+        res.status(404).json({ message: 'Задача не найдена' });
     }
 };
