@@ -4,7 +4,7 @@
 
 git clone https://github.com/Trifonix/work2205.git
 
-cs work2205/
+cd work2205/
 
 npm i
 
